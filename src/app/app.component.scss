@@ -1,0 +1,19 @@
+.app-container {}
+
+.header-container {
+  padding: 0 1%;
+  color: #CCCCCC;
+  background-color: #1E1F1C;
+}
+
+.content-container {
+  flex-grow: 1;
+}
+
+.nav-bar-container {
+  min-width: 25em;
+}
+
+.page-view-container {
+  flex-grow: 1;
+}

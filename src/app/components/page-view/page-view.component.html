@@ -1,0 +1,16 @@
+<div *ngIf="pageLoaded; then pageBlock else waitingBlock"></div>
+<ng-template #pageBlock>
+  <div>
+    <div class="page-title" ng-model="currentPage?.title" markdown-editable contenteditable="true">
+      <h3>{{ currentPage?.title }}</h3>
+    </div>
+    <div class="page-container" ng-model="currentPage?.content" markdown-editable contenteditable="true">
+      {{ currentPage?.content }}
+    </div>
+  </div>
+</ng-template>
+<ng-template #waitingBlock>
+  <div class="waiting-container height-100">
+    <h1>QuickPage</h1>
+  </div>
+</ng-template>

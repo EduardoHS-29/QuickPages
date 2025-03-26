@@ -2,7 +2,7 @@
 
 ## O quê é?
 
-O QuickPages é um aplicativo de bloco de notas com funções simples com o objetivo de colocar em prática conhecimentos que já consolidos, mas dessa vez desenvolvendo todas as áreas de um app.
+O QuickPages é um aplicativo de bloco de notas com funções simples com o objetivo de colocar em prática conhecimentos já obtidos, mas dessa vez desenvolvendo todas as áreas de um app.
 
 ## User Stories
 -   [x] O usuário pode criar uma página;

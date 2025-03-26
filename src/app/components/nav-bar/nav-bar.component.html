@@ -1,3 +1,23 @@
-<div class="nav-bar-teste height-100">
-  <h1>NavBar</h1>
+<div class="nav-bar-style height-100">
+  <div class="flex-row space-between">
+    <h2>Páginas</h2>
+    <button mat-icon-button matTooltip="Criar página" matTooltipPosition="before">
+      <mat-icon (click)="adicionarPagina.emit()">
+        add
+      </mat-icon>
+    </button>
+  </div>
+  <mat-divider></mat-divider>
+  <div>
+    <div *ngFor="let pagina of paginas">
+      <div class="pagina-select-style width-100 flex-row space-between">
+        <p>{{pagina.title}}</p>
+        <button mat-icon-button matTooltip="Deletar página" matTooltipPosition="before">
+          <mat-icon (click)="deletarPagina.emit(pagina.id)">
+            delete
+          </mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>

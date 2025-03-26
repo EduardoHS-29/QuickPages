@@ -1,9 +1,10 @@
 <div class="app-container flex-column height-100 width-100">
-  <div class="header-container">
+  <div class="header-container flex-row space-between">
     <h1>{{title}}</h1>
   </div>
   <div class="content-container flex-row">
-    <nav-bar-component class="nav-bar-container"></nav-bar-component>
+    <nav-bar-component [paginas]="paginas" (adicionarPagina)="adicionarPagina()" (deletarPagina)="deletarPagina($event)"
+      class="nav-bar-container"></nav-bar-component>
     <page-view-component class="page-view-container"></page-view-component>
   </div>
 </div>

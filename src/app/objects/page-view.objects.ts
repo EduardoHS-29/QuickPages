@@ -1,9 +1,15 @@
+import { v4 as generateUUID } from 'uuid';
+
 export class Page {
-  constructor(title?: String, content?: String) {
+  constructor(title?: string, content?: string, date?: Date, id?: string) {
     this.title = title;
     this.content = content;
+    this.dateCreation = date;
+    this.id = id ?? generateUUID();
   }
 
-  title: String | undefined;
-  content: String | undefined;
+  id: string;
+  title: string | undefined;
+  content: string | undefined;
+  dateCreation: Date | undefined;
 }

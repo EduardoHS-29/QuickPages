@@ -1,8 +1,26 @@
-.nav-bar-teste {
+.nav-bar-style {
   color: #CCCCCC;
   background-color: #272822;
+  padding: 5% 4% 0;
 
-  & h1 {
+  & h2 {
     margin: 0;
   }
+
+  & button,
+  mat-icon {
+    color: #CCCCCC;
+  }
+
+  & p {
+    padding-left: 3%;
+  }
+}
+
+.pagina-select-style {
+  align-items: center;
+}
+
+.pagina-select-style:hover {
+  background-color: #414339;
 }

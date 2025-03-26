@@ -6,6 +6,7 @@ app-root {
   padding: 0;
   height: 100%;
   width: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .flex-row {
@@ -28,4 +29,9 @@ app-root {
 
 .width-100 {
   width: 100%;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
 }
